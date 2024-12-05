@@ -9,10 +9,12 @@
 </head>
 
 <body>
-    <!--
-    <div class="mascara-formulario"></div>
-    
-    -->
+
+
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+
 
 
 
@@ -20,7 +22,7 @@
         <img src="./img/logo-header.png" alt="logo-mario">
         <a onclick="">home</a>
         <a>nossos serviços</a>
-        <a>fale conosco</a>
+        <a onclick="mostrarForm ()">fale conosco</a>
     </div>
 
 
@@ -44,7 +46,7 @@
             </a>
 
 
-            <button onclick="cliqueiNoBotao()"> entre em contato </button>
+            <button onclick="mostrarForm()"> entre em contato </button>
         </div>
 
 
@@ -52,7 +54,7 @@
         <div>
             <img src="./img/mario.png" alt="img-mario" class="img-mario-e-luigi">
         </div>
-        
+
     </div>
 
     <div class="video-mario">
@@ -63,22 +65,31 @@
 </body>
 
 
-<form class="formulario-fale-conosco">
+<form class="formulario-fale-conosco"
+     action="https://formcarry.com/s/hZRrVQR2J0c" 
+     method="POST"
+     enctype="multipart/form-data">
 
-    <input placeholder="seu nome">
-    <input placeholder="seu telefone">
-    <textarea placeholder="digite seu problema aqui"></textarea>
-    <button>Pedir Orçamento</button>
+
+
+    <input placeholder="seu nome" 
+    type="text" 
+    name="nome">
+    <input placeholder="seu telefone" 
+    type="tel"
+     name="telefone">
+    <textarea placeholder="digite seu problema aqui"
+     name="duvidas"></textarea>
+    <button 
+    type="submit">Pedir Orçamento</button>
 
 
 </form>
 
+<script src="scripts.js"></script>
+
+
 </body>
-
-
-<script src="./scripts.js"></script>
-
-
 
 
 </html>
